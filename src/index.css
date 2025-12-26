@@ -1,0 +1,570 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #F0F0F0;
+     background-image: url("b3.jpg");
+    background-size: cover;      /* makes image fill screen */
+    background-repeat: no-repeat;/* prevents repeating */
+    background-position: center; /* centers the image */
+}
+nav{
+    width: 100%;
+    height: 80px;
+    color: white;
+    background: linear-gradient(
+  90deg,
+  rgb(14, 133, 230),
+  rgb(5, 85, 160)
+);
+
+
+}
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.options{
+    color: white;
+    display: flex;
+    font-size: 20px;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    margin-top: 0px;
+    align-items: center;
+    justify-content:space-evenly;
+    font-family: "McLaren", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0px;
+}
+.options a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.options a:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: white;
+    border-radius: 12px;
+    transition: ease 150ms;
+}
+.options a.activeLink {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  color: white;
+}
+
+
+li{
+    list-style-type: none;
+    padding: 0px 10px;
+    /* height: 50%; */
+    width: auto;
+}
+h1.siteName{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-top: 0px;
+    margin-left:20px ;
+    font-family: "McLaren", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0px;
+}
+
+
+
+.dashBoardContainer{
+    width: 70%;
+    height: auto;
+    margin: 50px auto;
+    border-radius: 16px;
+    background: white;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border: 2px solid rgb(14, 133, 230);
+    
+}
+.dateContainer{
+    width: 320px;
+    height: 20%;
+    /* background-color: rgb(18, 147, 221); */
+    color: white;
+    /* border-radius: 44px; */
+    font-size: 70px;
+    /* border:2px solid white; */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+}
+/* div{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+} */
+.dateDay{
+    display: flex;
+    background: linear-gradient(
+        90deg,
+        rgb(14, 133, 230),
+        rgb(5, 85, 160)
+    );
+    border-radius: 59px;
+    justify-content: space-between;
+    width: 390px;
+    /* font-size: 70px; */
+}
+
+.date{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dayOfWeek{
+    margin-right: 30px;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.year{
+    color: black;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 63px;
+}
+.randContainer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.random{
+    border: 1px solid black;
+    background-color: aliceblue;
+    width: 100%;
+    background-image: url("b2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    height: 180px; /* remove this if u want to increase size of greeting */
+}
+.getDetButtons{
+    margin-top: 30px;
+    font-size: 40px;
+    height: 40px;
+    display: flex;
+    gap: 50px;
+    justify-content:space-evenly;
+}
+.button1{
+    width: 700px;
+    height: 60px;
+    border-radius: 12px;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    background-color:black;
+}
+/* .button1:hover,.button2:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease 100ms;
+} */
+.aboutUsHeader{
+    text-align: center;
+    font-size: 60px;
+}
+/* .button1{
+    background-color: rgb(65, 228, 65);
+}
+.button2{
+    background-color: rgb(241, 39, 39);
+} */
+
+.allParkings{
+    margin-top: 100px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+.parkingFooter{
+    /* height: 460px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.greeting{
+    margin: 10px auto;
+}
+.summary{
+
+    width: 74%;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    border :2px solid rgb(14, 133, 230);
+    border-radius: 11px;
+    padding: 20px;
+}
+h3{
+    margin: 0;
+}
+.parking{
+    width: 250px;
+    height: 100px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 2px solid rgb(19, 120, 167);
+}
+.parking:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease 200ms;
+}
+footer{
+    text-align: center;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+button.logOutBtn{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    background-color:black;
+    padding: 18px;
+    color: white;
+}
+.logOutBtn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease 300ms;
+}
+
+.logOutContainer{
+    width: 150px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.SmartParkIntro{
+    width: 65%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+.vission p{
+    font-size: 25px;
+    text-align: center;
+}
+.vission{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.card{
+    width: 280px;
+    height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: ease 500ms ;
+}
+.teamCards{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+.card h2,.card h3{
+    color: black;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: black;
+}
+.teamContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+.page h1{
+    color: white;
+}
+.loginContainer{
+    width: 450px;
+    height: 450px;
+    border-radius: 14px;
+    border: 2px solid rgb(130, 210, 236);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background: linear-gradient(
+  90deg,
+  #000000,
+  #333333
+);
+
+
+
+
+}
+.loginHeading{
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        rgb(14, 133, 230),
+        rgb(5, 85, 160)
+    );
+    height: 150px;
+    margin-bottom: 20px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color:white
+}
+.loginLabel{
+    width: 100%;
+    padding-left: 40px;
+    color: white;
+}
+.loginContainer input{
+    border-radius: 44px;
+    width: 80%;
+    font-size: 25px;
+    height: 60px;
+    border: 1px solid gray;
+    text-align: center;
+    margin-left: 30px;
+    
+}
+.loginContainer label{
+    font-size: 30px;
+    
+}
+.loginContainer button{
+    margin-top: 20px;
+    width: 60%;
+    height: 60px;
+    background: linear-gradient(
+        90deg,
+        rgb(14, 133, 230),
+        rgb(5, 85, 160)
+    );
+    border-radius:44px ;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    margin: 20px auto;
+}
+.currStatus{
+    width: 73%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: white;
+    border-radius: 12px;
+    border :2px solid rgb(14, 133, 230);
+    padding: 30px;
+}
+.slot{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    border :4px solid black;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slotName{
+    color: whitesmoke;
+    font-size: 60px;
+}
+.parkingSlot1{
+    background-color: rgb(44, 241, 44);
+}
+.parkingSlot2{
+    background-color: rgb(241, 39, 39);
+}
+.parkingSlot3{
+    background-color: rgb(44, 241, 44);
+}
+.parkingSlot4{
+    background-color: rgb(241, 39, 39);
+}
+@media(max-width:600px){
+
+    nav {
+        width: 100%;
+    }
+    .siteName{
+        font-size: 28px;
+        width: 200px;
+    }
+    .dashBoardContainer{
+        width: 70%;
+        height: auto;
+        margin: 20px auto;
+    }
+    .dateDay{
+        height: 100px;
+        width: 100%;
+    }
+    .date{
+        font-size: 50px;
+        height: 100px;
+        width: 100px;
+    }
+    .dayOfWeek h3{
+        width: 100%;
+        font-size: 40px;
+    }
+    .year{
+        font-size: 50px;
+        margin-left: 0px;
+    }
+    .dateDay{
+        width: 100%;
+    }
+    .dateContainer{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .randContainer{
+        width: 100%;
+        height: 150px;
+    }
+    .getDetButtons{
+        margin-bottom: 50px;
+    }
+    .random{
+        width: 100%;
+        font-size: 20px;
+    }
+    h3{
+        text-align: center;
+    }
+    .parking{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .currStatus{
+        display: flex;
+        flex-direction: column;
+    }
+    .slot{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 150px;
+    }
+    .allParkings{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 80%;
+        margin: 50px auto;
+        padding: 30px;
+    }
+    .page{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .loginContainer{
+        width: 100%;
+        margin: auto auto;
+    }
+    .SmartParkIntro{
+        width: 80%;
+    }
+    
+}
