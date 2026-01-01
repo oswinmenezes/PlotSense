@@ -1,9 +1,3 @@
-Perfect 👍
-I’ll **finalize the README for your actual repository** and fix the small things (real repo link, clearer steps).
-You can **copy-paste this directly into your `README.md`** on GitHub.
-
----
-
 # 🚗 PlotSense – IoT-Based Smart Parking System
 
 PlotSense is an **IoT-based smart parking prototype** designed to solve parking management issues in malls and public spaces. It uses **IR sensors with ESP32** to detect parking slot occupancy and sends real-time data to **Supabase**, which is visualized on a **React-based dashboard with authentication**.
