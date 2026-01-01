@@ -1,16 +1,153 @@
-# React + Vite
+Perfect 👍
+I’ll **finalize the README for your actual repository** and fix the small things (real repo link, clearer steps).
+You can **copy-paste this directly into your `README.md`** on GitHub.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 🚗 PlotSense – IoT-Based Smart Parking System
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+PlotSense is an **IoT-based smart parking prototype** designed to solve parking management issues in malls and public spaces. It uses **IR sensors with ESP32** to detect parking slot occupancy and sends real-time data to **Supabase**, which is visualized on a **React-based dashboard with authentication**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔧 Tech Stack
 
-## Expanding the ESLint configuration
+* **ESP32**
+* **IR Sensors**
+* **Supabase** (Database + Authentication)
+* **React.js** (Frontend Dashboard)
+* **Node.js / npm**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+```
+PlotSense/
+├── smartParking/        # ESP32 code
+├── src/
+│   ├── supabaseClient.js
+│   └── components/
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/oswinmenezes/PlotSense.git
+cd PlotSense
+```
+
+---
+
+## 🔌 ESP32 Setup
+
+### 2️⃣ Upload Code to ESP32
+
+* Open the **`smartParking`** file in **Arduino IDE**
+* Select the correct **ESP32 board** and **COM port**
+
+---
+
+### 3️⃣ Update Credentials in ESP32 Code
+
+Before uploading, update the following inside the `smartParking` file:
+
+```cpp
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
+
+const char* supabaseUrl = "YOUR_SUPABASE_URL";
+const char* supabaseKey = "YOUR_SUPABASE_ANON_KEY";
+```
+
+📌 **Make sure:**
+
+* IR sensors are connected to the correct ESP32 GPIO pins
+* WiFi credentials are correct
+* Supabase project is already created
+
+---
+
+### 4️⃣ Upload the Code
+
+* Click **Upload** in Arduino IDE
+* Open **Serial Monitor** to confirm ESP32 is connected and sending data
+
+---
+
+## 🗄️ Supabase Setup
+
+### 5️⃣ Create a Supabase Project
+
+1. Go to the **Supabase Dashboard**
+2. Create a new project
+3. Copy the following:
+
+   * **Project URL**
+   * **Anon Public Key**
+
+---
+
+## 🖥️ Frontend (React Dashboard) Setup
+
+### 6️⃣ Add Supabase Credentials
+
+Open **`src/supabaseClient.js`** and update:
+
+```javascript
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = "YOUR_SUPABASE_URL";
+const supabaseAnonKey = "YOUR_SUPABASE_ANON_KEY";
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+```
+
+---
+
+### 7️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 8️⃣ Run the Project Locally
+
+```bash
+npm run dev
+```
+
+The dashboard will be available at:
+
+```
+http://localhost:5173
+```
+
+(or the port shown in your terminal)
+
+---
+
+## 🔐 Features
+
+* Real-time parking slot detection
+* Secure authentication using Supabase
+* Live React-based dashboard
+* Cloud-based real-time data sync
+* Scalable architecture for public parking spaces
+
+---
+
+
+## 🤝 Contributions
+
+Feel free to **fork the repository**, experiment with the system, or add improvements.
+
+---
